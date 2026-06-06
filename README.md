@@ -37,7 +37,7 @@ Emergency department undertriage — assigning lower-than-appropriate acuity to 
 
 ## Datasets
 
-- **KTAS**: [moonssop/ktas](https://www.kaggle.com/datasets/moonssop/ktas) — Moon et al., PLOS One 2019
+- **KTAS**: Moon et al., PLOS One 2019 — Korean Triage and Acuity Scale (n=1,267)
 - **Yale ED**: Hong et al., PLOS One 2018
 - **Synthetic data**: Triagegeist competition dataset
 
