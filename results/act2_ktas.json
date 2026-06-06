@@ -1,0 +1,98 @@
+{
+  "act": "2_ktas_v2_split_crc",
+  "n_total": 1267,
+  "n_undertriage": 131,
+  "auc_calibration_pool": 0.7856,
+  "auc_holdout_test": {
+    "auroc_test": 0.8265,
+    "ci95_low": 0.7597,
+    "ci95_high": 0.8878,
+    "n_boot": 2000
+  },
+  "split_crc": {
+    "n_train": 886,
+    "n_test": 381,
+    "n_pos_cal": 92,
+    "granularity": 0.01075,
+    "calibration_proof": "split-CRC (Angelopoulos et al. arXiv:2208.02814 Thm1); valid under exchangeability; marginal FNR guarantee only.",
+    "operating_points": {
+      "alpha_0.05": {
+        "lambda": -0.1831,
+        "empirical_fnr": 0.0256,
+        "fnr_within_bound": true,
+        "alarm_rate": 0.7717,
+        "recall": 0.9744,
+        "precision": 0.1293
+      },
+      "alpha_0.1": {
+        "lambda": -0.0021,
+        "empirical_fnr": 0.0513,
+        "fnr_within_bound": true,
+        "alarm_rate": 0.622,
+        "recall": 0.9487,
+        "precision": 0.1561
+      },
+      "alpha_0.15": {
+        "lambda": 0.0002,
+        "empirical_fnr": 0.0513,
+        "fnr_within_bound": true,
+        "alarm_rate": 0.5696,
+        "recall": 0.9487,
+        "precision": 0.1705
+      },
+      "alpha_0.2": {
+        "lambda": 0.0028,
+        "empirical_fnr": 0.0769,
+        "fnr_within_bound": true,
+        "alarm_rate": 0.5171,
+        "recall": 0.9231,
+        "precision": 0.1827
+      },
+      "alpha_0.25": {
+        "lambda": 0.1279,
+        "empirical_fnr": 0.1795,
+        "fnr_within_bound": true,
+        "alarm_rate": 0.357,
+        "recall": 0.8205,
+        "precision": 0.2353
+      }
+    }
+  },
+  "decision_curve": {
+    "t_0.05": {
+      "net_benefit_model": 0.06437,
+      "net_benefit_all": 0.05512,
+      "net_benefit_none": 0.0,
+      "model_beats_all": true,
+      "model_beats_none": true
+    },
+    "t_0.1": {
+      "net_benefit_model": 0.03879,
+      "net_benefit_all": 0.00262,
+      "net_benefit_none": 0.0,
+      "model_beats_all": true,
+      "model_beats_none": true
+    },
+    "t_0.15": {
+      "net_benefit_model": 0.01374,
+      "net_benefit_all": -0.05604,
+      "net_benefit_none": 0.0,
+      "model_beats_all": true,
+      "model_beats_none": true
+    },
+    "t_0.2": {
+      "net_benefit_model": -0.01115,
+      "net_benefit_all": -0.12205,
+      "net_benefit_none": 0.0,
+      "model_beats_all": true,
+      "model_beats_none": false
+    },
+    "t_0.25": {
+      "net_benefit_model": -0.007,
+      "net_benefit_all": -0.19685,
+      "net_benefit_none": 0.0,
+      "model_beats_all": true,
+      "model_beats_none": false
+    }
+  }
+}

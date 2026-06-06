@@ -1,0 +1,49 @@
+{
+  "act": "1_decompilation",
+  "news2_recovery": {
+    "vitals_used": [
+      "respiratory_rate",
+      "spo2",
+      "systolic_bp",
+      "heart_rate",
+      "temperature_c",
+      "gcs_total"
+    ],
+    "holdout_exact_match": 0.9437,
+    "holdout_r2": 0.99638,
+    "note": "DT depth=16 on 6 vitals recovers NEWS2 exactly; score is deterministic"
+  },
+  "per_acuity_noise": {
+    "1": {
+      "n": 3222,
+      "noise_rate": 0.0885,
+      "toward_less_acute": 0.0885,
+      "toward_more_acute": 0.0
+    },
+    "2": {
+      "n": 13439,
+      "noise_rate": 0.0317,
+      "toward_less_acute": 0.024,
+      "toward_more_acute": 0.0077
+    },
+    "3": {
+      "n": 28921,
+      "noise_rate": 0.1122,
+      "toward_less_acute": 0.109,
+      "toward_more_acute": 0.0032
+    },
+    "4": {
+      "n": 23020,
+      "noise_rate": 0.2291,
+      "toward_less_acute": 0.1062,
+      "toward_more_acute": 0.1229
+    },
+    "5": {
+      "n": 11398,
+      "noise_rate": 0.2264,
+      "toward_less_acute": 0.0,
+      "toward_more_acute": 0.2264
+    }
+  },
+  "overall_oof_accuracy": 0.85237
+}

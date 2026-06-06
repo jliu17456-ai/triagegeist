@@ -1,0 +1,27 @@
+{
+  "act": "3_v2_matched_metamorphic",
+  "ktas_trained_violation_rate": 0.4047,
+  "ktas_per_feat": {
+    "hr": 0.4104,
+    "spo2": 0.6172,
+    "rr": 0.1863,
+    "sbp": 0.3978,
+    "temp": 0.412
+  },
+  "synthetic_n1267_subsets": {
+    "n_subsets": 100,
+    "mean": 0.1821,
+    "std": 0.0122,
+    "ci95_low": 0.1575,
+    "ci95_high": 0.2024
+  },
+  "reversal_robust": true,
+  "interpretation": "If reversal_robust=True: synthetic-n1267 CI upper bound is >5pp below KTAS rate \u2192 sample-size is not the explanation for the metamorphic reversal.",
+  "per_feat_synthetic_means": {
+    "hr": 0.1693,
+    "spo2": 0.0883,
+    "rr": 0.1723,
+    "sbp": 0.3661,
+    "temp": 0.1143
+  }
+}

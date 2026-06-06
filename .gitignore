@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Data — large files; sources documented in data/NOTE.md
+data/*
+!data/NOTE.md
+
+# Tooling / session-local state
+.aris/
+.claude/
+.playwright-mcp/
+.remember/
+
+# Secrets
+.env
